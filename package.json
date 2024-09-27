@@ -10,8 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.4",
     "@primevue/themes": "^4.0.7",
     "nuxt": "^3.13.0",
+    "pinia": "^2.2.2",
     "primevue": "^4.0.7",
     "vue": "latest",
     "vue-router": "latest"
@@ -21,5 +23,8 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13"
-  }
+  },
+  "overrides": {
+  "vue": "latest"
+}
 }
