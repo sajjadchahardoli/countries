@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@primevue/nuxt-module',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/google-fonts'
 ],
 primevue: {
   options: {
@@ -25,5 +26,11 @@ primevue: {
   plugins: ['~/plugins/fontawesome.js'],
   build: {
     transpile: ['@fortawesome/vue-fontawesome'],
+  },
+  googleFonts: {
+    families: {
+      'Nunito+Sans': [300, 600, 800], 
+    },
+    display: 'swap', 
   },
 })
