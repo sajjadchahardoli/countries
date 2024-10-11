@@ -22,4 +22,8 @@ primevue: {
       autoprefixer: {},
     },
   },
+  plugins: ['~/plugins/fontawesome.js'],
+  build: {
+    transpile: ['@fortawesome/vue-fontawesome'],
+  },
 })
